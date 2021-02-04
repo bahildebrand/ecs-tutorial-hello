@@ -3,10 +3,10 @@
 #[macro_use] extern crate rocket;
 
 #[get("/")]
-fn item() -> String {
+fn hello() -> String {
     String::from("Hello")
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![item]).launch();
+    rocket::ignite().mount("/", routes![hello]).launch();
 }
