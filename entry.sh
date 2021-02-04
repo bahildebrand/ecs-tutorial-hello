@@ -1,1 +1,1 @@
-./target/release/inventory-service
+./target/release/hello-service

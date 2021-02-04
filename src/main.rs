@@ -2,9 +2,9 @@
 
 #[macro_use] extern crate rocket;
 
-#[get("/item/<item>")]
-fn item(item: String) -> String {
-    format!("Item: {}", item)
+#[get("/")]
+fn item() -> String {
+    String::from("Hello")
 }
 
 fn main() {
