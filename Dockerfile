@@ -11,5 +11,7 @@ COPY --from=builder /builder /service
 WORKDIR /service
 
 RUN chmod +x entry.sh
+RUN apt-get update -y
+RUN apt-get install libssl1.1 -y
 
 ENTRYPOINT ["bash", "./entry.sh"]
